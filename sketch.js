@@ -30,6 +30,8 @@ path.velocityY = 4;
 //creating boy running
 boy = createSprite(70,580,20,20);
 boy.addAnimation("SahilRunning",boyImg);
+boy.addAnimation("end",endImg)
+ boy.changeAnimation("SahilRunning")
 boy.scale=0.08;
   
   
@@ -80,7 +82,7 @@ function draw() {
         gameState=END;
         
         //boy.addAnimation(endImg);
-         boy.addAnimation("SahilRunning",endImg);
+         boy.changeAnimation("end");
         // boy.addAnimation("SahilRunning");
         // boy.addAnimation(SahilRunning,endImg);
 
